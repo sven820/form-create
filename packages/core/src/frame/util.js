@@ -156,6 +156,7 @@ export function toProps(rule) {
     prop.class = rule.class;
     prop.id = rule.id;
     prop.style = rule.style;
+    prop.field = rule.field;
     if (prop.slot) delete prop.slot;
 
     return prop;

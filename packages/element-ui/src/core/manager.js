@@ -134,6 +134,7 @@ export default {
             key: `${uni}fi`,
             ref: ctx.wrapRef,
             type: 'formItem',
+            field: rule.field //jxf custom
         }]), {default: () => children, ...(isTitle ? {label: () => this.makeInfo(rule, uni, ctx)} : {})});
         return (inline === true || isFalse(_col) || isFalse(col.show)) ? item : this.makeCol(rule, uni, [item]);
     },
